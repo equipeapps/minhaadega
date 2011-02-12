@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivysettings>
+    <settings defaultResolver="resolvers"/>
+    <include url="${ivy.default.settings.dir}/ivysettings-public.xml"/>
+    <include url="${ivy.default.settings.dir}/ivysettings-shared.xml"/>
+    <include url="${ivy.default.settings.dir}/ivysettings-local.xml"/>
+    <include url="${ivy.default.settings.dir}/ivysettings-main-chain.xml"/>
+    <include url="${ivy.default.settings.dir}/ivysettings-default-chain.xml"/>
+
+    <resolvers>
+        <chain name="resolvers" returnFirst="true">
+            <ibiblio name="ibiblio" m2compatible="true" usepoms="true" />                 
+            <url name="mvnrepository" m2compatible="true">
+                  <artifact pattern="http://mvnrepository.com/artifact/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </url>
+            <url name="objectify" m2compatible="true">
+                  <artifact pattern="http://objectify-appengine.googlecode.com/svn/maven/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </url>
+        </chain>
+    </resolvers>
+</ivysettings>

@@ -1,0 +1,5 @@
+Para colocar o projeto pra rodar é necessário seguir os seguintes passos:
+
+1. Rodar o ant: "ant resolve"
+2. Adicionar os libs do diretório projeto/libs-vraptor-gae/vraptor-gae/*.jar na pasta war/WEB-INF/lib
+3. Adicionar as libs de war/WEB-INF/lib no Build-path do eclipse.
