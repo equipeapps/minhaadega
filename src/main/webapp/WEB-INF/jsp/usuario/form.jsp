@@ -21,10 +21,6 @@
     <input type="text" name="usuario.nome" value="${usuario.nome}"/>
   </div>
   <div class="field">
-    Vinhosacomprar:<br />
-    <input type="text" name="usuario.vinhosAComprar" value="${usuario.vinhosAComprar}"/>
-  </div>
-  <div class="field">
     Vinhosnaadega:<br />
     <input type="text" name="usuario.vinhosNaAdega" value="${usuario.vinhosNaAdega}"/>
   </div>
@@ -46,4 +42,3 @@
 </form>
 
 <a href="<c:url value="/usuarios"/>">Back</a>
-

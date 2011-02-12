@@ -1,15 +1,11 @@
 package br.com.minhaadega.models;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.googlecode.objectify.Key;
 
 public class Usuario extends Entity {
 	
 	private Integer nivel;
 	private String nome;
-	private Key<Vinho>[] vinhosNaAdega;
+	private String vinhosNaAdega;
 	private String reviews;
 	private String login;
 	private String email;
@@ -30,21 +26,29 @@ public class Usuario extends Entity {
 		return nome;
 	}
 		
-	public void setVinhosNaAdega(Key<Vinho>[] vinhosNaAdega) {
+//	public void setVinhosNaAdega(Key<Vinho>[] vinhosNaAdega) {
+//		this.vinhosNaAdega = vinhosNaAdega;
+//	}
+	
+	public void setVinhosNaAdega(String vinhosNaAdega) {
 		this.vinhosNaAdega = vinhosNaAdega;
 	}
 	
-	public Key<Vinho>[] getVinhosNaAdega() {
+//	public Key<Vinho>[] getVinhosNaAdega() {
+//		return vinhosNaAdega;
+//	}
+	
+	public String getVinhosNaAdega() {
 		return vinhosNaAdega;
 	}
 	
-	public List<Key<Vinho>> getVinhosNaAdegaComoLista() {
-		List<Key<Vinho>> list = new ArrayList<Key<Vinho>>();
-		for (int i = 0; i < vinhosNaAdega.length; i++) {
-			list.add(vinhosNaAdega[i]);
-		}
-		return list;
-	}
+//	public List<Key<Vinho>> getVinhosNaAdegaComoLista() {
+//		List<Key<Vinho>> list = new ArrayList<Key<Vinho>>();
+//		for (int i = 0; i < vinhosNaAdega.length; i++) {
+//			list.add(vinhosNaAdega[i]);
+//		}
+//		return list;
+//	}
 	
 	public void setReviews(String reviews) {
 		this.reviews = reviews;

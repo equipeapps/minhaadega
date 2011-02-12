@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.googlecode.objectify.Objectify;
 
-abstract class AbstractRepository<T, I extends Serializable> {
+public class AbstractRepository<T, I extends Serializable> {
 	
 	protected final Objectify objectify;
 	

@@ -9,9 +9,8 @@
 	</configurations>
 
 	<dependencies>
-		<dependency org="br.com.caelum" name="vraptor" rev="3.3.0" conf="default">
-			<include type="jar" />
-		</dependency>
+		<dependency org="br.com.caelum" name="vraptor" rev="3.3.0" conf="default" />
+		
 		<dependency org="opensymphony" name="sitemesh" rev="2.4.2" conf="default" />
 		<dependency org="javax.servlet" name="jstl" rev="1.2" conf="default" />
 		<dependency org="joda-time" name="joda-time" rev="1.6.2" conf="default" />
@@ -25,14 +24,8 @@
 		<dependency org="org.hamcrest" name="hamcrest-all" rev="1.1" conf="test->default" />
 		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />
 		
-		<dependency org="net.sf.scannotation" name="scannotation" rev="1.0.2" conf="default" />
-<!--		<exclusions>-->
-<!--		<exclusion>-->
-<!--		<groupId>javassist</groupId>-->
-<!--		<artifactId>javassist</artifactId>-->
-<!--		</exclusion>-->
-<!--		</exclusions>-->
-		<dependency org="javassist" name="javassist" rev="3.9.0.GA" conf="default" />
+		<dependency org="net.sf.scannotation" name="scannotation" rev="1.0.2" conf="default" transitive="false" />
+
 		<dependency org="commons-collections" name="commons-collections" rev="3.2.1" conf="default" />
 		<dependency org="commons-fileupload" name="commons-fileupload" rev="1.2.1" conf="default" />
 		<dependency org="commons-io" name="commons-io" rev="1.3.2" conf="default" />
@@ -45,30 +38,20 @@
 		<dependency org="com.googlecode.objectify" name="objectify" rev="2.2.3" conf="default" />
 		
 		<!-- App Engine dependencies -->
-		<dependency org="com.google.appengine" name="appengine-api-1.0-sdk" rev="1.4.0" conf="provided->default" />
-		<dependency org="com.google.appengine" name="appengine-api-labs" rev="1.4.0" conf="provided->default" />
-		<dependency org="com.google.appengine" name="appengine-jsr107cache" rev="1.4.0" conf="provided->default" />
-		<dependency org="com.google.appengine.orm" name="datanucleus-appengine" rev="1.0.8" conf="provided->default" />
-		<dependency org="org.datanucleus" name="datanucleus-core" rev="1.1.5" conf="provided->default" />
-		<dependency org="org.datanucleus" name="datanucleus-jpa" rev="1.1.5" conf="provided->default" />
-		<dependency org="org.apache.geronimo.specs" name="geronimo-jpa_3.0_spec" rev="1.1.1" conf="provided->default" />
-		<dependency org="org.apache.geronimo.specs" name="geronimo-jta_1.1_spec" rev="1.1.1" conf="provided->default" />
-		<dependency org="javax.jdo" name="jdo2-api" rev="2.3-eb" conf="provided->default" />
-		<dependency org="net.sf.jsr107cache" name="jsr107cache" rev="1.1" conf="provided->default" />
-
+		<dependency org="com.google.appengine" name="appengine-api-1.0-sdk" rev="1.4.0" conf="default" />
+		<dependency org="com.google.appengine" name="appengine-api-labs" rev="1.4.0" conf="default" />
+		<dependency org="com.google.appengine" name="appengine-jsr107cache" rev="1.4.0" conf="default" />
+		<dependency org="com.google.appengine.orm" name="datanucleus-appengine" rev="1.0.8" conf="default" />
+		<dependency org="org.datanucleus" name="datanucleus-core" rev="1.1.5" conf="default" />
+		<dependency org="org.datanucleus" name="datanucleus-jpa" rev="1.1.5" conf="default" />
+		<dependency org="org.apache.geronimo.specs" name="geronimo-jpa_3.0_spec" rev="1.1.1" conf="default" />
+		<dependency org="org.apache.geronimo.specs" name="geronimo-jta_1.1_spec" rev="1.1.1" conf="default" />
+		<dependency org="javax.jdo" name="jdo2-api" rev="2.3-eb" conf="default" />
+		<dependency org="net.sf.jsr107cache" name="jsr107cache" rev="1.1" conf="default" />
 
 		<!-- Overriding ognl from vraptor to exclude old version javassist -->
-<!--		<dependency>-->
-<!--			<groupId>ognl</groupId>-->
-<!--			<artifactId>ognl</artifactId>-->
-<!--			<version>2.7.3</version>-->
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<groupId>jboss</groupId>-->
-<!--					<artifactId>javassist</artifactId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
-<!--		</dependency>-->
+		<dependency org="ognl" name="ognl" rev="2.7.3" conf="default" transitive="false" />
+
 		
 	</dependencies>
 </ivy-module>
