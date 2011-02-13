@@ -1,5 +1,6 @@
-#Sat Feb 12 09:43:37 BRST 2011
+#Sat Feb 12 12:10:52 BRST 2011
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
+lastWarOutDir=/home/arthur/desenvolvimento/workspaces/eclipse/vraptor-gae-ivy-project
 warSrcDir=src/main/webapp
-warSrcDirIsOutput=false
+warSrcDirIsOutput=true
