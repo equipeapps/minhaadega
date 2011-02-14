@@ -5,6 +5,10 @@ import java.util.logging.Logger;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
+import br.com.minhaadega.models.Review;
+import br.com.minhaadega.models.Usuario;
+import br.com.minhaadega.models.Vinho;
+
 import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.google.appengine.tools.development.testing.LocalDatastoreServiceTestConfig;
@@ -59,6 +63,10 @@ public class TestBase {
 				return super.begin(opts);
 			}
 		};
+		
+		fact.register(Vinho.class);
+		fact.register(Usuario.class);
+		fact.register(Review.class);
 	}
 
 	@AfterClass

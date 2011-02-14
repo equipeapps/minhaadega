@@ -6,11 +6,11 @@ import java.util.List;
 
 import com.googlecode.objectify.Objectify;
 
-public class AbstractRepository<T, I extends Serializable> {
+public class Repository<T, I extends Serializable> {
 	
 	protected final Objectify objectify;
 	
-	public AbstractRepository(Objectify objectify) {
+	public Repository(Objectify objectify) {
 		this.objectify = objectify;
 	}
 	

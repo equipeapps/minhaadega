@@ -6,7 +6,7 @@ import br.com.minhaadega.models.Usuario;
 import com.googlecode.objectify.Objectify;
 
 @Component
-public class UsuarioRepositoryImpl extends AbstractRepository<Usuario, Long> implements UsuarioRepository {
+public class UsuarioRepositoryImpl extends Repository<Usuario, Long> implements UsuarioRepository {
 
 	public UsuarioRepositoryImpl(Objectify objectify) {
 		super(objectify);
